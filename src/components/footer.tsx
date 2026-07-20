@@ -3,6 +3,8 @@ import { Github, Linkedin, Mail } from "lucide-react";
 import { site } from "@/lib/site";
 
 export function Footer() {
+  const hasLinkedIn = Boolean(site.linkedin.trim());
+
   return (
     <footer className="border-t border-border/60">
       <div className="container-width flex flex-col gap-6 py-10 sm:flex-row sm:items-center sm:justify-between">
@@ -19,12 +21,14 @@ export function Footer() {
           >
             <Github className="size-4" />
           </Link>
-          <Link
-            href={site.linkedin}
-            className="rounded-full border border-border/60 bg-background p-3 text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <Linkedin className="size-4" />
-          </Link>
+          {hasLinkedIn ? (
+            <Link
+              href={site.linkedin}
+              className="rounded-full border border-border/60 bg-background p-3 text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <Linkedin className="size-4" />
+            </Link>
+          ) : null}
           <Link
             href={`mailto:${site.email}`}
             className="rounded-full border border-border/60 bg-background p-3 text-muted-foreground transition-colors hover:text-foreground"

@@ -1,6 +1,10 @@
-# Portfólio Premium
+# Gabriel Silva Rodrigues
 
-Portfólio premium para desenvolvedor Front-end construído com Next.js 15, TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, GSAP e next-themes.
+Portfólio pessoal construído com Next.js 15, TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, GSAP e next-themes.
+
+## Visão geral
+
+Este projeto foi montado para destacar trabalho front-end com foco em UI premium, SEO, desempenho e motion com propósito.
 
 ## Destaques
 
@@ -9,9 +13,9 @@ Portfólio premium para desenvolvedor Front-end construído com Next.js 15, Type
 - PWA com manifest e service worker.
 - Seções modulares e data-driven.
 - Blog preparado com MDX.
-- Validação de formulário com `zod` + `react-hook-form`.
+- Formulário com validação usando `zod` e `react-hook-form`.
 - Animações leves com Framer Motion e GSAP.
-- Deploy-ready para Vercel.
+- Deploy pronto para Vercel.
 
 ## Stack
 
@@ -24,21 +28,19 @@ Portfólio premium para desenvolvedor Front-end construído com Next.js 15, Type
 - next-themes
 - Lucide Icons
 
-## Estrutura
+## Acesso
 
-```txt
-src/
-  app/
-  animations/
-  components/
-  data/
-  hooks/
-  lib/
-  sections/
-  types/
-content/
-public/
-```
+- Deploy: [portf-lio-tec14.vercel.app](https://portf-lio-tec14.vercel.app)
+- GitHub: [gsrodrigues-git](https://github.com/gsrodrigues-git)
+- E-mail: [gabrielsilvaerodrigues@gmail.com](mailto:gabrielsilvaerodrigues@gmail.com)
+
+## Conteúdo editável
+
+- `src/lib/site.ts`: copy principal, links e dados do portfólio.
+- `content/blog/*.mdx`: artigos do blog.
+- `public/projects/*.svg`: imagens de projetos.
+- `src/app/layout.tsx`: metadata global, open graph e manifest.
+- `LICENSE`: licença MIT.
 
 ## Scripts
 
@@ -50,18 +52,8 @@ npm run lint
 npm run typecheck
 ```
 
-## Conteúdo editável
+## Observações
 
-- `src/lib/site.ts`: copy principal, links e dados do portfólio.
-- `content/blog/*.mdx`: artigos do blog.
-- `public/projects/*.svg`: imagens de projetos.
-- `src/app/layout.tsx`: metadata global, open graph e manifest.
-- `LICENSE`: licença MIT.
-
-## Notas
-
-- Configure `NEXT_PUBLIC_SITE_URL` na Vercel para a URL final do deploy.
-- Se quiser usar o domínio grátis da Vercel, o valor atual do projeto é `https://portf-lio-tec14.vercel.app`.
-- Atualize os links de GitHub, LinkedIn e e-mail em `src/lib/site.ts`.
-- O endpoint de contato em `src/app/api/contact/route.ts` valida os dados e já pode ser integrado a um provedor de e-mail.
-- A publicação em produção funciona melhor com um repositório Git conectado à Vercel.
+- `NEXT_PUBLIC_SITE_URL` já pode apontar para a URL grátis da Vercel.
+- O projeto está conectado ao GitHub, então qualquer `push` em `main` dispara um novo deploy.
+- Se você quiser adicionar o LinkedIn depois, basta preencher `src/lib/site.ts` e o link aparece automaticamente.

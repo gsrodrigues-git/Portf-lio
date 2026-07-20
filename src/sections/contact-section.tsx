@@ -24,6 +24,7 @@ const contactSchema = z.object({
 type ContactFormValues = z.infer<typeof contactSchema>;
 
 export function ContactSection() {
+  const hasLinkedIn = Boolean(site.linkedin.trim());
   const [feedback, setFeedback] = useState<string | null>(null);
   const [pending, startTransition] = useTransition();
   const {
@@ -150,13 +151,15 @@ export function ContactSection() {
                   GitHub
                   <Github className="size-4 text-muted-foreground" />
                 </Link>
-                <Link
-                  href={site.linkedin}
-                  className="flex items-center justify-between rounded-2xl border border-border/60 bg-background/70 px-4 py-3 text-sm transition-colors hover:bg-foreground/5"
-                >
-                  LinkedIn
-                  <Linkedin className="size-4 text-muted-foreground" />
-                </Link>
+                {hasLinkedIn ? (
+                  <Link
+                    href={site.linkedin}
+                    className="flex items-center justify-between rounded-2xl border border-border/60 bg-background/70 px-4 py-3 text-sm transition-colors hover:bg-foreground/5"
+                  >
+                    LinkedIn
+                    <Linkedin className="size-4 text-muted-foreground" />
+                  </Link>
+                ) : null}
                 <Link
                   href={`mailto:${site.email}`}
                   className="flex items-center justify-between rounded-2xl border border-border/60 bg-background/70 px-4 py-3 text-sm transition-colors hover:bg-foreground/5"

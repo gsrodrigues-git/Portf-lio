@@ -17,11 +17,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: {
-    default: "Portfólio Premium | Front-end Developer & UI Engineer",
-    template: "%s | Portfólio Premium",
+    default: "Gabriel Silva Rodrigues | Front-end Developer & UI Engineer",
+    template: "%s | Gabriel Silva Rodrigues",
   },
   description:
-    "Portfólio premium em Next.js 15, TypeScript, Tailwind, Framer Motion e GSAP, com foco em UI sofisticada, SEO e performance.",
+    "Portfólio de Gabriel Silva Rodrigues em Next.js 15, TypeScript, Tailwind, Framer Motion e GSAP, com foco em UI sofisticada, SEO e performance.",
   keywords: [
     "Front-end Developer",
     "UI Engineer",
@@ -32,20 +32,20 @@ export const metadata: Metadata = {
     "GSAP",
     "Portfolio",
   ],
-  authors: [{ name: "Seu Nome" }],
-  creator: "Seu Nome",
+  authors: [{ name: "Gabriel Silva Rodrigues" }],
+  creator: "Gabriel Silva Rodrigues",
   openGraph: {
     type: "website",
     locale: "pt_BR",
     url: "/",
-    siteName: "Portfólio Premium",
-    title: "Portfólio Premium | Front-end Developer & UI Engineer",
+    siteName: "Gabriel Silva Rodrigues",
+    title: "Gabriel Silva Rodrigues | Front-end Developer & UI Engineer",
     description:
       "Um portfólio com linguagem visual de produto SaaS de alto nível, pronto para destacar trabalho front-end em 2026.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfólio Premium | Front-end Developer & UI Engineer",
+    title: "Gabriel Silva Rodrigues | Front-end Developer & UI Engineer",
     description:
       "Um portfólio premium com foco em design, motion, acessibilidade e performance.",
   },

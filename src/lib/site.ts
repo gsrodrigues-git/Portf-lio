@@ -1,15 +1,15 @@
 import type { NavItem, Project, Skill, Stat, TimelineItem } from "@/types";
 
 export const site = {
-  name: "Seu Nome",
+  name: "Gabriel Silva Rodrigues",
   role: "Front-end Developer & UI Engineer",
   description:
-    "Crio experiências web minimalistas, rápidas e orientadas a produto, com foco em performance, acessibilidade e refinamento visual.",
+    "Crio experiências web rápidas, elegantes e orientadas a produto, com foco em performance, acessibilidade e refinamento visual.",
   location: "Fortaleza, Brasil",
   availability: "Disponível para projetos seletos e consultoria.",
-  email: "hello@seunome.dev",
-  github: "https://github.com/",
-  linkedin: "https://www.linkedin.com/",
+  email: "gabrielsilvaerodrigues@gmail.com",
+  github: "https://github.com/gsrodrigues-git",
+  linkedin: "",
   ctaPrimary: "Ver Projetos",
   ctaSecondary: "Contato",
   yearsStudying: 3,
@@ -121,7 +121,7 @@ export const projects: Project[] = [
       "Plataforma de dados com UI editorial, gráficos elegantes e navegação fluida para análise em tempo real.",
     image: "/projects/project-1.svg",
     technologies: ["Next.js", "TypeScript", "GSAP", "Tailwind"],
-    github: "https://github.com/",
+    github: "https://github.com/gsrodrigues-git",
     deploy: "https://portf-lio-tec14.vercel.app",
     featured: true,
   },
@@ -131,7 +131,7 @@ export const projects: Project[] = [
       "Site institucional para estúdio criativo, com narrativa visual sofisticada e transições suaves entre seções.",
     image: "/projects/project-2.svg",
     technologies: ["React", "Framer Motion", "MDX", "SEO"],
-    github: "https://github.com/",
+    github: "https://github.com/gsrodrigues-git",
     deploy: "https://portf-lio-tec14.vercel.app",
   },
   {
@@ -140,7 +140,7 @@ export const projects: Project[] = [
       "Experiência de e-commerce com foco em performance, clareza de conversão e layout premium em mobile.",
     image: "/projects/project-3.svg",
     technologies: ["Next.js", "Zod", "UI System", "PWA"],
-    github: "https://github.com/",
+    github: "https://github.com/gsrodrigues-git",
     deploy: "https://portf-lio-tec14.vercel.app",
   },
 ];
