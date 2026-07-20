@@ -122,7 +122,7 @@ export const projects: Project[] = [
     image: "/projects/project-1.svg",
     technologies: ["Next.js", "TypeScript", "GSAP", "Tailwind"],
     github: "https://github.com/",
-    deploy: "https://example.com",
+    deploy: "https://portf-lio-tec14.vercel.app",
     featured: true,
   },
   {
@@ -132,7 +132,7 @@ export const projects: Project[] = [
     image: "/projects/project-2.svg",
     technologies: ["React", "Framer Motion", "MDX", "SEO"],
     github: "https://github.com/",
-    deploy: "https://example.com",
+    deploy: "https://portf-lio-tec14.vercel.app",
   },
   {
     title: "Pulse Commerce",
@@ -141,6 +141,6 @@ export const projects: Project[] = [
     image: "/projects/project-3.svg",
     technologies: ["Next.js", "Zod", "UI System", "PWA"],
     github: "https://github.com/",
-    deploy: "https://example.com",
+    deploy: "https://portf-lio-tec14.vercel.app",
   },
 ];

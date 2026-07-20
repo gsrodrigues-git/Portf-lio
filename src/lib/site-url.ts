@@ -17,5 +17,5 @@ export function getSiteUrl() {
     return normalizeUrl(vercelUrl);
   }
 
-  return "https://portfolio.example.com";
+  return "https://portf-lio-tec14.vercel.app";
 }
