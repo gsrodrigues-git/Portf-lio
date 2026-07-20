@@ -60,7 +60,7 @@ npm run typecheck
 
 ## Notas
 
-- Substitua `https://portfolio.example.com` pela URL real do domínio.
+- Configure `NEXT_PUBLIC_SITE_URL` na Vercel para a URL final do deploy.
 - Atualize os links de GitHub, LinkedIn e e-mail em `src/lib/site.ts`.
 - O endpoint de contato em `src/app/api/contact/route.ts` valida os dados e já pode ser integrado a um provedor de e-mail.
 - A publicação em produção funciona melhor com um repositório Git conectado à Vercel.
