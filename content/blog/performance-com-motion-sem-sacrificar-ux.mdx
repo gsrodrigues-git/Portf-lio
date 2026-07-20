@@ -1,0 +1,32 @@
+---
+title: "Performance com motion sem sacrificar UX"
+description: "Boas práticas para usar Framer Motion e GSAP de forma elegante, mantendo fluides e estabilidade visual."
+date: "2026-06-12"
+readingTime: "7 min"
+tags:
+  - Performance
+  - Framer Motion
+  - GSAP
+---
+
+# Performance com motion sem sacrificar UX
+
+Motion é mais convincente quando reforça estrutura, hierarquia e contexto. Se o efeito chama mais atenção do que o conteúdo, ele já passou do ponto.
+
+## Regras simples
+
+- Anime poucas propriedades.
+- Evite reflows desnecessários.
+- Prefira transform e opacity.
+- Respeite `prefers-reduced-motion`.
+
+### Exemplo
+
+```tsx
+motion.div
+  initial={{ opacity: 0, y: 24 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+```
+
+Essas escolhas mantêm a experiência leve, previsível e com aparência premium.

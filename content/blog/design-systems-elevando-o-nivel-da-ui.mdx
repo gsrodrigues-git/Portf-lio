@@ -1,0 +1,37 @@
+---
+title: "Design systems que elevam o nível da UI"
+description: "Como organizar tokens, componentes e decisões visuais para escalar um produto sem perder sofisticação."
+date: "2026-05-18"
+readingTime: "6 min"
+tags:
+  - Design System
+  - UI Engineering
+  - Tailwind CSS
+---
+
+# Design systems que elevam o nível da UI
+
+Um bom design system não é apenas uma biblioteca de componentes. Ele é uma forma de reduzir atrito, preservar consistência e acelerar decisões.
+
+## Três camadas que importam
+
+1. Tokens bem definidos.
+2. Componentes com variações previsíveis.
+3. Regras claras para uso de motion e estados.
+
+> Sofisticação vem de consistência, não de excesso.
+
+### Exemplo prático
+
+```tsx
+export function PremiumCard({ title, description }) {
+  return (
+    <article className="rounded-3xl border bg-card p-6 shadow-glass">
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </article>
+  );
+}
+```
+
+Quando a base visual está bem resolvida, o produto parece maior do que a equipe.
