@@ -16,6 +16,10 @@ export function useGsapReveal(
   options: RevealOptions = {},
 ) {
   useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+
     let cleanup = () => {};
     let mounted = true;
 
@@ -66,6 +70,10 @@ export function useGsapReveal(
 
 export function useGsapParallax(ref: RefObject<HTMLElement | null>, speed = 12) {
   useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+
     let cleanup = () => {};
     let mounted = true;
 
